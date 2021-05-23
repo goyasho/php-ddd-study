@@ -44,4 +44,4 @@ services:
     environment:
       PMA_HOST: myapp-db
       PMA_USER: root
-      PMA_PASSWORD: mu7ya9to
+      PMA_PASSWORD: passwd

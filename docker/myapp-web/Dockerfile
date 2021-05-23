@@ -27,3 +27,6 @@ RUN apt-get update \
   && docker-php-ext-install pdo_mysql \
   # mod_rewrite 有効化
   && a2enmod rewrite
+
+WORKDIR /var/www/html
+RUN composer create-project --prefer-dist cakephp/app:~4.1.0 ./
