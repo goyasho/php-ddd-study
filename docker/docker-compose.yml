@@ -27,9 +27,11 @@ services:
       - "./initdb:/docker-entrypoint-initdb.d"
     environment:
       MYSQL_DATABASE: sampledb
-      MYSQL_USER: sample-user
-      MYSQL_PASSWORD: hi2mi4i6
-      MYSQL_ROOT_PASSWORD: mu7ya9to
+      MYSQL_USER: sample
+      MYSQL_PASSWORD: pw
+      MYSQL_ROOT_PASSWORD: passwd
+    ports:
+      - "3307:3306"
 
   # phpMyAdmin
   myapp-pma:
